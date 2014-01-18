@@ -1,8 +1,8 @@
 <div class="navbar navbar-fixed-bottom navbar-inverse text-center" ng-show="playerControl.config.isValid">
+	<i class="fa fa-step-forward fa-inverse player-icon" ng-click="playerControl.nextVideo();"></i>
 	<i class="fa fa-inverse player-icon fa-pause" ng-click="playerControl.pauseVideo();" ng-show="playerControl.config.status==1"></i>
 	<i class="fa fa-play fa-inverse player-icon" ng-show="playerControl.config.status==2||playerControl.config.status==0" ng-click="playerControl.playVideo();"></i>
 	<i class="fa fa-spinner fa-inverse fa-spin player-icon" ng-show="playerControl.config.status==3||playerControl.config.status==-1"></i>
-	<i class="fa fa-step-forward fa-inverse player-icon" ng-click="playerControl.nextVideo();"></i>
 	<i class="fa fa-step-backward fa-inverse player-icon" ng-click="playerControl.previousVideo();"></i>
 </div>
 <div class="row">
